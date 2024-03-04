@@ -9,10 +9,34 @@
       div {
         color: red;
       }
+
+      span {
+        color: green;
+      }
     </style>
     <script src="./tooltip.js"></script>
+    <script src="./confirm-link.js"></script>
   </head>
   <body>
-    <my-tooltip text="Salut"> </my-tooltip>
+    <template id="tooltip-template">
+      <span></span>
+    </template>
+
+    <my-tooltip text="Salut">Salutare Tuturor</my-tooltip>
+
+    <my-tooltip text="Salut">Salutare Tuturor</my-tooltip>
+
+    <my-tooltip text="Salut">Salutare Tuturor</my-tooltip>
+
+    <br />
+
+    <template>
+      <h1>Buna</h1>
+    </template>
+
+    <!-- To define our custom component extends from specific components need to use "is"
+      attribute
+     -->
+    <a is="custom-link" href="./">Acesta este un link apropate custom</a>
   </body>
 </html>
